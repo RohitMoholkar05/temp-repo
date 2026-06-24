@@ -109,6 +109,8 @@ This project analyzes LA restaurant and market health violation data using SQL, 
 
 The project includes a star schema model, SQL schema script, Tableau dashboard screenshot, reporting outputs, and presentation/report documents. The analysis focuses on violation cases by city, service type, year, and program element category.
 
+The project includes a star schema model, SQL schema script, Tableau dashboard screenshot, reporting outputs, and presentation/report documents. The analysis focuses on violation cases by city, service type, year, and program element category, helping identify geographic concentration, inspection patterns, service-level distribution, and yearly violation trends.
+
 ## ▶️ Running the Notebooks
 
 Install the required Python dependencies:
