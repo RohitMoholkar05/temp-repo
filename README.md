@@ -6,8 +6,8 @@ This repository contains data analytics projects focused on data collection, dat
 
 | Project | Domain | Tools | Dataset Size | Key Output |
 |---|---|---|---:|---|
-| [Rental Property Market Analysis](rental-property-market-analysis) | Real Estate Analytics | Python, Selenium, BeautifulSoup, Pandas, Matplotlib, Seaborn | 2,478 rows x 10 columns | Rental market analysis with scraped property listings, EDA, and housing trend insights |
-| [Job Market Analysis](job-market-analysis) | Workforce Analytics | Python, Pandas, NumPy, Matplotlib, Seaborn, JSON | 1,615,940 rows x 23 columns | Large-scale job posting analysis covering sectors, roles, hiring trends, and skill patterns |
+| [Rental Property Market Analysis](rental-property-market-analysis) | Real Estate Analytics | Python, Selenium, BeautifulSoup, Pandas, Matplotlib, Seaborn | 2,478 rows x 10 columns | Rental market analysis with scraped property listings, data wrangling, EDA, and housing trend insights |
+| [Job Market Analysis](job-market-analysis) | Workforce Analytics | Python, Pandas, NumPy, Matplotlib, Seaborn, JSON | 1,615,940 rows x 23 columns | Large-scale job posting analysis covering sectors, roles, companies, hiring trends, and skill patterns |
 | [Restaurant Market Health Violations](restaurant-market-health-violations) | Public Health Analytics | SQL Server, Star Schema, Tableau, Reporting Services | 313,676 rows x 17 columns | Data warehouse schema, SQL reporting, Tableau dashboard, and violation trend analysis |
 
 ## 📊 Dataset Sources
@@ -16,7 +16,7 @@ This repository contains data analytics projects focused on data collection, dat
 |---|---|---|---|
 | Rental Property Market Analysis | NoBroker Rental Listings | Web Scraped Dataset | Rent, deposit, area, maintenance, furnishing, property type, preferred tenants, availability, location |
 | Job Market Analysis | Job Description Dataset | [Kaggle](https://www.kaggle.com/datasets/ravindrasinghrana/job-description-dataset) | Job titles, roles, company details, sectors, skills, responsibilities, experience, qualifications, salary, work type, portal |
-| Restaurant Market Health Violations | LA Restaurant & Market Health Data | [Kaggle](https://www.kaggle.com/datasets/cityofLA/la-restaurant-market-health-data?select=restaurant-and-market-health-violations.csv) | Violation codes, facility details, inspection dates, violation status, program elements, scores, service types |
+| Restaurant Market Health Violations | LA Restaurant & Market Health Data | [Kaggle](https://www.kaggle.com/datasets/cityofLA/la-restaurant-market-health-data?select=restaurant-and-market-health-violations.csv) | Violation codes, facility details, inspection dates, violation status, program elements, grades, scores, service types |
 
 Large external datasets are not included in this repository due to file size and source management considerations. Dataset download instructions are provided inside the respective project `data` folders.
 
