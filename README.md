@@ -15,7 +15,7 @@ This repository contains data analytics projects focused on data collection, dat
 | Project | Dataset | Source | Key Features |
 |---|---|---|---|
 | Rental Property Market Analysis | NoBroker Rental Listings | Web Scraped Dataset | Rent, deposit, area, maintenance, furnishing, property type, preferred tenants, availability, location |
-| Job Market Analysis | Job Description Dataset | [Kaggle](https://www.kaggle.com/datasets/ravindrasinghrana/job-description-dataset) | Job titles, roles, company details, sectors, skills, responsibilities, experience, qualifications, work type |
+| Job Market Analysis | Job Description Dataset | [Kaggle](https://www.kaggle.com/datasets/ravindrasinghrana/job-description-dataset) | Job titles, roles, company details, sectors, skills, responsibilities, experience, qualifications, salary, work type, portal |
 | Restaurant Market Health Violations | LA Restaurant & Market Health Data | [Kaggle](https://www.kaggle.com/datasets/cityofLA/la-restaurant-market-health-data?select=restaurant-and-market-health-violations.csv) | Violation codes, facility details, inspection dates, violation status, program elements, scores, service types |
 
 Large external datasets are not included in this repository due to file size and source management considerations. Dataset download instructions are provided inside the respective project `data` folders.
