@@ -1,55 +1,77 @@
-## MACHINE LEARNING PORTFOLIO
+## DATA ANALYTICS PORTFOLIO
 
-This repository contains machine learning projects focused on data preparation, feature engineering, exploratory data analysis, predictive modeling, model evaluation, and business insights. The projects demonstrate regression and classification workflows using real-world datasets from retail analytics and sports analytics domains.
+This repository contains data analytics projects focused on data collection, data cleaning, exploratory analysis, visualization, SQL reporting, dashboard development, and insight generation. The projects demonstrate end-to-end analytics workflows using Python, SQL, Tableau, and reporting tools across real-world datasets.
 
 ## 📌 Project Highlights
 
-| Project | Domain | Problem Type | Dataset Size | Key Output |
+| Project | Domain | Tools | Dataset Size | Key Output |
 |---|---|---|---:|---|
-| [Retail Sales Forecasting](retail-sales-forecasting) | Retail Analytics | Regression | 9,994 rows x 20 columns | Sales and profit analysis with Linear Regression and XGBoost models |
-| [NBA Player Performance Prediction](nba-player-performance-prediction) | Sports Analytics | Classification | 645,953 rows x 29 columns | Player impact classification using Logistic Regression and K-Nearest Neighbors |
+| [Rental Property Market Analysis](rental-property-market-analysis) | Real Estate Analytics | Python, Selenium, BeautifulSoup, Pandas, Matplotlib, Seaborn | 2,478 rows x 10 columns | Rental market analysis with scraped property listings, EDA, and housing trend insights |
+| [Job Market Analysis](job-market-analysis) | Workforce Analytics | Python, Pandas, NumPy, Matplotlib, Seaborn, JSON | 1,615,940 rows x 23 columns | Large-scale job posting analysis covering sectors, roles, hiring trends, and skill patterns |
+| [Restaurant Market Health Violations](restaurant-market-health-violations) | Public Health Analytics | SQL Server, Star Schema, Tableau, Reporting Services | 313,676 rows x 17 columns | Data warehouse schema, SQL reporting, Tableau dashboard, and violation trend analysis |
 
 ## 📊 Dataset Sources
 
 | Project | Dataset | Source | Key Features |
 |---|---|---|---|
-| Retail Sales Forecasting | Superstore Dataset | [Kaggle](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final) | Order details, customer segments, geography, product categories, shipping modes, sales, discount, profit |
-| NBA Player Performance Prediction | NBA Analysis Dataset | [Kaggle](https://www.kaggle.com/datasets/chandra03/nba-analysis) | Player details, team information, season records, minutes played, scoring metrics, rebounds, assists, steals, blocks, plus-minus |
+| Rental Property Market Analysis | NoBroker Rental Listings | Web Scraped Dataset | Rent, deposit, area, maintenance, furnishing, property type, preferred tenants, availability, location |
+| Job Market Analysis | Job Description Dataset | [Kaggle](https://www.kaggle.com/datasets/ravindrasinghrana/job-description-dataset) | Job titles, roles, company details, sectors, skills, responsibilities, experience, qualifications, work type |
+| Restaurant Market Health Violations | LA Restaurant & Market Health Data | [Kaggle](https://www.kaggle.com/datasets/cityofLA/la-restaurant-market-health-data?select=restaurant-and-market-health-violations.csv) | Violation codes, facility details, inspection dates, violation status, program elements, scores, service types |
 
-Datasets are not included in this repository due to file size and source management considerations. To run the notebooks locally, download the datasets from Kaggle and place them inside the respective `data` folders using the filenames mentioned above.
+Large external datasets are not included in this repository due to file size and source management considerations. Dataset download instructions are provided inside the respective project `data` folders.
 
 ## 📂 Repository Structure
 
 ```text
-machine-learning/
+data-analytics/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
-├── retail-sales-forecasting/
-│   ├── retail_sales_forecasting.ipynb
+├── rental-property-market-analysis/
+│   ├── rental_property_market_analysis.ipynb
 │   ├── data/
-│   │   └── README.md
+│   │   └── rental_property_listings.csv
 │   └── documents/
-│       └── retail_sales_forecasting_report.pdf
-└── nba-player-performance-prediction/
-    ├── nba_player_performance_prediction.ipynb
-    └── data/
-        └── README.md
+│       └── rental_property_market_analysis_report.pdf
+├── job-market-analysis/
+│   ├── job_market_analysis.ipynb
+│   └── data/
+│       └── README.md
+└── restaurant-market-health-violations/
+    ├── assets/
+    │   ├── restaurant_market_health_violations_dashboard.png
+    │   └── star_schema.png
+    ├── data/
+    │   └── README.md
+    ├── diagrams/
+    │   └── star_schema.drawio
+    ├── documents/
+    │   ├── restaurant_market_health_violations_report.pdf
+    │   └── restaurant_market_health_violations_presentation.pdf
+    ├── reports/
+    │   ├── cases_by_program_element.pdf
+    │   ├── ratio_by_services.pdf
+    │   ├── tabular_report.pdf
+    │   └── trend_of_health_violation.pdf
+    └── sql/
+        └── restaurant_market_health_violations_schema.sql
 ```
 
 ## 🧩 Skills Demonstrated
 
-- Data preparation and cleaning
+- Data collection and data preparation
+- Web scraping with Selenium and BeautifulSoup
+- Data cleaning and transformation
 - Exploratory data analysis
-- Feature engineering
-- Regression modeling
-- Classification modeling
-- Model training and testing
-- Hyperparameter tuning
-- Model evaluation using accuracy, R², RMSE, and classification metrics
-- Data visualization for model interpretation
-- Business and analytical insight generation
-- Jupyter Notebook project documentation
+- Data visualization and reporting
+- Large-scale dataset analysis
+- JSON parsing and feature extraction
+- SQL database design
+- Star schema modeling
+- Dimensional data warehousing
+- Tableau dashboard development
+- SQL reporting and PDF report generation
+- Analytical interpretation and insight generation
 
 ## 💻 Technology Stack
 
@@ -59,47 +81,50 @@ machine-learning/
 - NumPy
 - Matplotlib
 - Seaborn
-- Scikit-learn
-- XGBoost
-- Pickle
+- BeautifulSoup
+- Selenium
+- lxml
+- JSON
+- SQL Server
+- Tableau
+- Reporting Services
 
 ## 📚 Project Summaries
 
-### Retail Sales Forecasting
+### Rental Property Market Analysis
 
-This project analyzes retail transaction data to understand revenue and profit drivers across customer segments, cities, states, product categories, and shipping modes. The workflow includes data preparation, feature engineering, label encoding, outlier handling, exploratory analysis, regression modeling, and model evaluation.
+This project analyzes rental property listings collected from NoBroker.com. The workflow includes web scraping, data cleaning, preprocessing, exploratory data analysis, and visualization.
 
-Linear Regression and XGBoost models were trained and evaluated, with XGBoost achieving approximately 65% R² after tuning. The analysis identified discount as one of the strongest factors affecting profitability, providing practical insight into pricing, shipping, and customer segmentation decisions.
+The analysis focuses on rent, deposit, area, maintenance, furnishing type, property type, preferred tenants, availability, and location. Key findings highlight differences between furnished and unfurnished properties, variation across prime localities, and the relationship between rent and deposit.
 
-### NBA Player Performance Prediction
+### Job Market Analysis
 
-This project analyzes NBA player performance records to classify player impact using machine learning. The workflow includes data cleaning, missing-value handling, datatype correction, feature selection, target-variable engineering, exploratory analysis, model training, and model evaluation.
+This project analyzes a large-scale job posting dataset from Kaggle covering job descriptions across multiple sectors and roles. The workflow includes data cleaning, column reduction, datatype correction, missing-value handling, JSON parsing, exploratory analysis, and visualization.
 
-The project creates a modified plus-minus based target variable to represent player impact and uses performance metrics such as minutes played, points, rebounds, assists, steals, blocks, and shooting-related statistics for prediction. Exploratory analysis was used to understand team-level and player-level performance patterns before modeling.
+The analysis explores hiring trends, sector-level demand, role distribution, and job requirement patterns. The cleaned dataset structure supports deeper analysis of job market behavior and employment trends over time.
 
-A Logistic Regression model achieved approximately 62% accuracy and outperformed a K-Nearest Neighbors model, which achieved approximately 56% accuracy. The models were evaluated using accuracy score, confusion matrix, and classification report. The project also includes a career statistics function to aggregate player performance across seasons.
+### Restaurant Market Health Violations
+
+This project analyzes LA restaurant and market health violation data using SQL, dimensional modeling, reporting, and dashboard visualization. The workflow includes SQL Server database design, landing table creation, star schema modeling, fact and dimension table design, SQL reporting, and Tableau dashboard development.
+
+The project includes a star schema model, SQL schema script, Tableau dashboard screenshot, reporting outputs, and presentation/report documents. The analysis focuses on violation cases by city, service type, year, and program element category.
 
 ## ▶️ Running the Notebooks
 
-Install the required dependencies:
+Install the required Python dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Download the datasets from the Kaggle links listed above and place them in the correct project `data` folders:
-
-```text
-retail-sales-forecasting/data/superstore.csv
-nba-player-performance-prediction/data/nba.csv
-```
-
-Open any project notebook using Jupyter Notebook or VS Code:
+Open Python-based project notebooks using Jupyter Notebook or VS Code:
 
 ```bash
 jupyter notebook
 ```
 
+For projects using external datasets, download the datasets from the linked sources and place them in the respective project `data` folders using the filenames described in each `data/README.md`.
+
 ## 🚀 Purpose
 
-The purpose of this repository is to present practical machine learning projects in a clean, structured, and well-documented format. These projects demonstrate how real-world datasets can be prepared, explored, modeled, evaluated, and converted into meaningful analytical and business insights.
+The purpose of this repository is to present practical data analytics projects in a clean, structured, and well-documented format. These projects demonstrate how real-world data can be collected, cleaned, modeled, analyzed, visualized, and reported to support interpretation, reporting, and decision-making.
